@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Animacija</title>
+
+    <style>
+    
+  body {background-color: #050210;}
+
+ 
+
+.box {
+    animation: box 2s linear infinite;
+    border-radius: 50%;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff 500px);
+    box-shadow: 2px 2px 100px white;
+    height: 500px;
+    width: 500px;
+    margin: 100px auto;}
+
+ .box2 {height: 410px;
+        width: 410px;
+        margin: 100px auto;
+        background-color: black;
+        border-radius: 50%;
+        transform: translateY(-135%);
+        animation: box2 2s linear infinite;
+        
+        }
+        
+.box3 {height: 300px;
+        width: 300px;
+        margin:-1000px 510px;
+        
+        background-color:#08021b;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 213;
+        animation: box3 1s linear infinite;
+        
+        }
+
+@keyframes box {
+100% {transform: rotate(500deg); 
+}}
+    
+@keyframes box2 {
+ 
+          
+}
+
+
+
+
+
+
+
+@keyframes box3 {
+  
+    0%{transform: scale(0.05);
+       opacity: 0.8;}
+
+    100% {transform: scale(1.30);
+          opacity: 0.3;}  
+    
+} 
+            
+
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <div id="boxes-container">
+            <div id="div-1" class="box">
+                
+            </div>
+            <div id="div-2" class="box2"></div>
+        </div>
+        <div id="div-3" class="box3"></div>
+    </div>
+</body>
+</html>
